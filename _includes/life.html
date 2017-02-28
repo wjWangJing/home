@@ -1,0 +1,18 @@
+<div class="wrap" id="wrap">
+    <!--photo负责平移旋转-->
+    <div class="photo  photo_front" onclick="turn(this)" id="photo_{{index}}">
+        <!--photo-wrap负责翻转-->
+        <div class="photo-wrap">
+            <div class="side side-front">
+                <div class="image">
+                    <img src="../image/{{img}}" alt="">
+                </div>
+                <div class="caption">{{caption}}</div>
+            </div>
+            <div class="side side-back">
+                <div class="photo-description">{{desc}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>
