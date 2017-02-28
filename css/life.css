@@ -1,0 +1,134 @@
+*{box-sizing: border-box;}
+html,body{width:100%;height:100%;overflow: hidden;}
+.wrap{
+    width:100%;
+    height:100%;
+    /*margin:50px auto;*/
+    background-color: #ccc;
+    position: relative;
+    -webkit-perspective: 800px;
+    overflow: hidden;
+}
+.wrap .photo{
+    width:260px;
+    height:320px;
+    position:absolute;
+    z-index: 1;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.01);
+    -webkit-transition: all .6s;
+    left:50%;
+    top:50%;
+    margin:-160px 0 0 -130px;
+}
+.wrap .photo .side{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    -webkit-backface-visibility: hidden;
+    padding:20px;
+    background-color: #eee;
+}
+.wrap .photo .side-front{
+
+}
+.wrap .photo .side-front .image{
+    width:100%;
+    height:250px;
+    line-height: 250px;
+    overflow: hidden;
+}
+.wrap .photo .side-front .image img{
+    width:100%;
+}
+.wrap .photo .side-front .caption{
+    line-height: 50px;
+    text-align: center;
+    font-size:16px;
+}
+.wrap .photo .side-back{
+
+}
+.wrap .photo .side-back .photo-description{
+    font-size: 14px;
+    line-height: 1.5em;
+    color:#666;
+}
+
+/*反转之后的样式*/
+.wrap .photo-center{
+    top:50%;
+    left:50%;
+    margin-top:-160px;
+    margin-left:-120px;
+    z-index: 999;
+}
+.wrap .photo-wrap{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s;
+    -webkit-transform-origin: 0% 50%;
+}
+.wrap .photo-wrap .side-front{
+    transform: rotateY(0deg);
+}
+.wrap .photo-wrap .side-back{
+    transform: rotateY(180deg);
+}
+
+.photo_front .photo-wrap{
+    -webkit-transform: translate(0,0) rotateY(0deg);
+}
+.photo_back .photo-wrap{
+    -webkit-transform: translate(260px,0) rotateY(180deg);
+}
+.wrap .photo-center{
+    top:50%;
+    left:50%;
+    margin-top:-160px;
+    margin-left:-120px;
+    z-index: 999;
+}
+
+/*控制按钮的样式*/
+.nav{
+    width:80%;
+    height:30px;
+    line-height: 30px;
+    position:absolute;
+    left:10%;
+    bottom:20px;
+    z-index: 999;
+    /*background-color: #fff;*/
+    text-align: center;
+}
+/*控制按钮普通样式*/
+.nav .s{
+    width:30px;height:30px;display: inline-block;
+    cursor: pointer;
+    background-color: #aaa;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transform: scale(.48);
+    -webkit-transition: all .5s;
+}
+
+/*控制按钮选中样式*/
+.nav .s_current{
+    width:30px;height:30px;display: inline-block;
+    cursor: pointer;
+    background-color: pink;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+}
+
+/*控制按钮背面样式*/
+.nav .s_back{
+    -webkit-transform: rotateY(-180deg);
+    background-color: #555;
+}
