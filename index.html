@@ -1,48 +1,45 @@
----
-layout: default
-title: 个人网站
----
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eternal丶</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
 <div class="wrap-container">
-    <a href="#" class="column1">
-        <img src="./image/test1.png" alt="">
+    <a href="./static/resume.html" class="column1">
+        <img src="./image/resume.png" alt="">
         <div>
             <h3>简历</h3>
             <h4>RESUME</h4>
         </div>
     </a>
-    <a href="#" class="column2">
-        <img src="./image/test1.png" alt="">
+    <a href="./static/note.html" class="column2">
+        <img src="./image/note.png" alt="">
         <div>
             <h3>笔记</h3>
             <h4>NOTE</h4>
         </div>
     </a>
-    <a href="#" class="column3">
-        <img src="./image/test1.png" alt="">
+    <a href="./static/work.html" class="column3">
+        <img src="./image/work.png" alt="">
         <div>
             <h3>作品</h3>
             <h4>WORK</h4>
         </div>
     </a>
-    <a href="#" class="column4">
-        <img src="./image/test1.png" alt="">
+    <a href="./static/life.html" class="column4">
+        <img src="./image/life.png" alt="">
         <div>
             <h3>生活</h3>
             <h4>LIFE</h4>
         </div>
     </a>
 </div>
-
-
-
-
-
-
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-    {% for post in site.posts %}
-        <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
- </ul>
+</body>
+</html>
