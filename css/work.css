@@ -1,0 +1,67 @@
+html,body{
+    width:100%;
+    height:100%;
+    font-family: "Microsoft Yahei"
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+.work-container{
+    width:100%;
+    height:100%;
+}
+/*  ======
+    左边目录部分
+    ======
+*/
+.work-catalog{
+    width:15%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #7C90DB;
+    padding:30px 0;
+    color:#EBECEF;
+}
+.work-catalog>div{
+    width:100%;
+    font-size: 36px;
+    margin:10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+.work-catalog>ul{
+    width:100%;
+}
+.work-catalog>ul li{
+    width:100%;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+.work-catalog>ul li a{
+    color:#EBECEF;
+}
+/*  ======
+    右边内容部分
+    ======
+*/
+.work-content{
+    width:85%;
+    height:100%;
+    background-color: #aaaaaa;
+    margin-left:15%;
+    padding:50px;
+}
+.work-content ul{
+    width:100%;
+}
+.work-content ul li{
+    width:240px;
+    height:250px;
+}

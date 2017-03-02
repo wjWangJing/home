@@ -4,10 +4,10 @@ a,h3,h4{color:#333;}
 h3{margin-bottom: 10px;}
 .wrap-container{width:100%;height:100%;overflow:hidden;display: flex;}
 .wrap-container a{position: relative;transition: all 0.3s ease;}
-.wrap-container a.column1{background-color: pink;}
-.wrap-container a.column2{background-color: aquamarine;}
-.wrap-container a.column3{background-color: yellowgreen;}
-.wrap-container a.column4{background-color: burlywood;}
+.wrap-container a.column1{/*background-color: pink;*/background-color: #9593D9;}
+.wrap-container a.column2{/*background-color: aquamarine;*/background-color: #736B92}
+.wrap-container a.column3{/*background-color: yellowgreen;*/background-color: #7C90DB}
+.wrap-container a.column4{/*background-color: burlywood;*/background-color: #E5BEED}
 .wrap-container a img{position:absolute;}
 .wrap-container a>div{text-align: center;position: absolute;}
 @media screen and (min-width:1441px){
