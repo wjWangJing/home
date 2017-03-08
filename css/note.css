@@ -1,0 +1,55 @@
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background-color: #EFF4F7;
+}
+.error{
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.error img{
+    width:100%;
+}
+
+@media screen and (min-width:1441px){
+    .error{
+        width:35%;
+        height:70%;
+    }
+}
+@media screen and (max-width: 1440px) and (min-width:960px){
+    .error{
+        width: 50%;
+        height: 60%;
+    }
+
+}
+@media screen and (max-width: 959px) and (min-width:769px){
+    .error{
+        width: 60%;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 768px) and (min-width:480px){
+    .error{
+        width: 80%;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 479px) and (min-width:350px){
+    .error{
+        width: 80%;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 349px) and (min-width:320px){
+    .error{
+        width: 80%;
+        height: 70%;
+    }
+}

@@ -1,8 +1,26 @@
+/*  ========
+	清除浮动
+	=======
+*/
+.clearFix:before,
+.clearFix:after{
+    content:" ";
+    display: table;
+}
+
+.clearFix:after{
+    clear:both;
+}
+
 html,body{
     width:100%;
     height:100%;
-    font-family: "Microsoft Yahei"
+    font-family: "Microsoft Yahei";
+    margin:0;
+    padding:0;
+    overflow: hidden;
 }
+
 a{
     text-decoration: none;
 }
@@ -12,56 +30,47 @@ a{
 .work-container{
     width:100%;
     height:100%;
+    background-color: #EFF4F7;
+    overflow: hidden;
+    position: relative;
 }
-/*  ======
-    左边目录部分
-    ======
-*/
 .work-catalog{
-    width:15%;
-    height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    background-color: #7C90DB;
-    padding:30px 0;
-    color:#EBECEF;
-}
-.work-catalog>div{
     width:100%;
-    font-size: 36px;
-    margin:10px auto;
     text-align: center;
-    font-weight: bold;
+    float: left;
+    font-size: 40px;
+    margin-top:50px;
 }
-.work-catalog>ul{
+.work-nav{
     width:100%;
+    float: left;
 }
-.work-catalog>ul li{
-    width:100%;
-    height:60px;
-    text-align: center;
-    line-height: 60px;
+.work-nav li{
+    float: left;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    padding:10px;
+    background-color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
-.work-catalog>ul li a{
-    color:#EBECEF;
-}
-/*  ======
-    右边内容部分
-    ======
-*/
-.work-content{
-    width:85%;
-    height:100%;
-    background-color: #aaaaaa;
-    margin-left:15%;
-    padding:50px;
-}
-.work-content ul{
+.work-nav li a{
+    display: block;
     width:100%;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
 }
-.work-content ul li{
-    width:240px;
-    height:250px;
+.work-content{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:70%;
+    background-color: #9593D9;
+}
+.work-content li{
+    float: left;
+    width:33.33333%;
+    height:50%;
 }

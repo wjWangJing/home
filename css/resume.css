@@ -16,51 +16,477 @@
 	=======
 */
 html{font-size:62.5%;}
-html,body{width:100%;height:100%;color:#333;font-family: "Microsoft Yahei"}
+html,body{width:100%;height:100%;color:#333;font-family: "Microsoft Yahei";overflow-x: hidden}
 a,h3.h4{color:#333;}
+*{box-sizing: border-box;}
 
 /*  ========
-	导航样式
+	关于我
 	=======
 */
-.re-container{
+.resume-container{
     width:100%;
-    height:6rem;
-    background-color: rgba(0,0,0,0.8);
-    position:fixed;
-    top:0;
-    left:0;
 }
-.re-container>div{
+.resume-container ul{
+    width:100%;
+}
+.resume-container ul .introduce{
+    width:100%;
+}
+.resume-container ul .introduce>div{
+    float: left;
+}
+.resume-container ul  .title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:#9593D9;
+    margin-bottom:3rem;
+}
+.resume-container ul .introduce  .head-pic{
+    position: relative;
+}
+.resume-container ul .introduce  .head-pic .img-box{
+    border-radius: 50%;
+    border:10px solid #F1F1F1;
+    float: left;
+}
+.resume-container ul .introduce  .head-pic .img-box img{
+    width:100%;
+}
+.resume-container ul .introduce  .head-pic .basic-info{
+    float:right;
+}
+
+.resume-container ul .introduce  .head-pic  .basic-info div{
+    font-size:16px;
+    padding:10px;
+    color:#fff;
+    border-radius: 4px;
+    width:60%;
+    margin:10px auto;
+}
+.resume-container ul .introduce  .head-pic  .basic-info .name    {
+    background-color:#B7827A;
+}
+.resume-container ul .introduce  .head-pic  .basic-info .sex     {
+    background-color:#DCB66F;
+}
+.resume-container ul .introduce  .head-pic  .basic-info .address {
+    background-color:#889BA2;
+}
+.resume-container ul .introduce  .head-pic  .basic-info .interest{
+    background-color:#909C75;
+}
+
+.resume-container ul .experience{
+    background-color: #EEEEEE;
+}
+.graduation{
+    width:80%;
+    margin-left: 10%;
+}
+.graduation ul li{
+    float: left;
+    width:25%;
+}
+.graduation ul li img{
+    display: block;
+    margin:0 auto;
+}
+.graduation ul li div{
+    text-align: center;
+    color: #9593D9;
+    font-weight: bold;
+}
+
+/*  ========
+	专业技能
+	=======
+*/
+.skills>ul{
+    float: left;
+}
+.skills>ul>li{
     float:left;
-    line-height: 6rem;
-    font-size:2rem;
-    background: url("../image/logo.png") no-repeat center left;
-    background-size: 3rem;
-    padding-left:4rem;
-    margin-left:4rem;
-    color:#fff;
-}
-.re-container>ul{
-    text-align: right;
-    margin-right:4rem;
-    padding:3px 0;
-}
-.re-container ul li{
-    display: inline-block;
-}
-.re-container ul li a{
-    display: inline-block;
-    padding:0 3rem;
-    line-height:5.5rem;
-    font-size:1.6rem;
-    color:#fff;
-    text-decoration: none;
-}
-.re-container ul li a:hover,
-.re-container ul li a:active,
-.re-container ul li a.active{
-    color:#F93D5C;
+    width:25%;
+    margin-bottom:3rem;
 }
 
+.skills>ul>li img{
+    display: block;
+    margin:10px auto;
+}
+.skills>ul>li div{
+    font-size:3rem;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+}
 
+/*  ========
+	工作经验
+	=======
+*/
+.experience ul{
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+}
+.experience ul li{
+    margin-bottom:20px;
+}
+.experience ul .project-title div{
+    float:left;
+    margin:10px 0;
+    line-height: 28px;
+}
+.experience ul .project-content div{
+    font-size: 16px;
+    margin:10px 0;
+    line-height: 36px;
+}
+.experience ul .project-content .time ~ div{
+    text-indent:40px;
+}
+/*  ========
+	个人感悟
+	=======
+*/
+.experience p{
+    float: left;
+    width:90%;
+    margin-left:5%;
+    line-height: 36px;
+    text-indent: 32px;
+    font-size: 16px;
+}
+@media screen and (min-width:1201px){
+    .resume-container ul .introduce{
+        padding:7rem;
+    }
+    .resume-container ul  .title{
+        width:90%;
+        margin-left:5%;
+    }
+    .resume-container ul .introduce  .head-pic{
+        width:80%;
+        left:10%;
+        margin-bottom:100px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width:25rem;
+        margin-right:8rem;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width:50%;
+        height:25rem;
+        padding-top: 5.5rem;
+    }
+    .graduation ul li img{
+        width:150px;
+    }
+    .graduation ul li div{
+        font-size: 30px;
+        margin-top:20px;
+    }
+    .skills>ul>li img{
+        width:100px;
+    }
+    .experience ul .project-title div{
+        width:40%;
+        float:left;
+        font-size: 18px;
+        margin:10px 0;
+        line-height: 28px;
+    }
+    .experience ul .project-title .time{
+        width:30%;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width:960px){
+    .resume-container ul .introduce{
+        padding:3.5rem 2rem 3rem 2rem;
+    }
+    .resume-container ul  .title{
+         width:90%;
+        margin-left:5%;
+     }
+    .resume-container ul .introduce  .head-pic{
+        width:90%;
+        left:5%;
+        margin-bottom:20px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width:20rem;
+        margin-right:10rem;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width: 50%;
+        height: 22rem;
+        margin-top: 2rem;
+    }
+    .graduation ul li img{
+        width:120px;
+    }
+    .graduation ul li div{
+        font-size: 24px;
+        margin-top:20px;
+    }
+    .skills>ul>li img{
+        width:70px;
+    }
+    .experience ul .project-title div{
+        width:40%;
+        float:left;
+        font-size: 18px;
+        margin:10px 0;
+        line-height: 28px;
+    }
+    .experience ul .project-title .time{
+        width:30%;
+    }
+}
+@media screen and (max-width: 959px) and (min-width:769px){
+    .resume-container ul .introduce{
+        padding:3.5rem 2rem 3rem 2rem;
+    }
+    .resume-container ul  .title{
+        width:90%;
+        margin-left:5%;
+    }
+    .resume-container ul .introduce  .head-pic{
+        width:90%;
+        left:5%;
+        margin-bottom:20px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width:20rem;
+        margin-right:6.5rem;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width: 50%;
+        height: 22rem;
+        margin-top: 2rem;
+    }
+    .graduation ul li img{
+        width:120px;
+    }
+    .graduation ul li div{
+        font-size: 24px;
+        margin-top:20px;
+    }
+    .skills>ul>li img{
+        width:70px;
+    }
+    .experience ul .project-title div{
+        width:40%;
+        float:left;
+        font-size: 18px;
+        margin:10px 0;
+        line-height: 28px;
+    }
+    .experience ul .project-title .time{
+        width:30%;
+    }
+}
+@media screen and (max-width: 768px) and (min-width:480px){
+    .resume-container ul .introduce{
+        padding:3.5rem 2rem 3rem 2rem;
+    }
+    .resume-container ul  .title{
+        width:90%;
+        margin-left:5%;
+    }
+    .resume-container ul .introduce  .head-pic{
+        width: 90%;
+        left: 5%;
+        margin-bottom: 20px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width: 15.5rem;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width: 50%;
+        height: 15rem;
+    }
+    .graduation ul li img{
+        width: 90px;
+    }
+    .graduation ul li div{
+        font-size: 18px;
+        margin-top:20px;
+    }
+    .skills>ul>li img{
+        width:70px;
+    }
+    .experience ul .project-title div{
+        width:40%;
+        float:left;
+        font-size: 18px;
+        margin:10px 0;
+        line-height: 28px;
+    }
+    .experience ul .project-title .time{
+        width:30%;
+    }
+    .resume-container ul .introduce  .head-pic  .basic-info div{
+        width:100%;
+    }
+    .graduation{
+        width:90%;
+        margin-left: 5%;
+    }
+    .skills>ul>li{
+        float:left;
+        width:33.3333%;
+        margin-bottom:3rem;
+    }
+    .skills>ul>li div{
+        font-size:2rem;
+    }
+}
+@media screen and (max-width: 479px) and (min-width:380px){
+    .resume-container ul .introduce{
+        padding: 3.5rem 1rem 3rem 1rem;
+    }
+    .resume-container ul  .title{
+        width:90%;
+        margin-left:5%;
+        font-size: 2.2rem;
+    }
+    .resume-container ul .introduce  .head-pic{
+        width: 95%;
+        left: 2.5%;
+        margin-bottom: 20px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width: 13rem;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width: 50%;
+        /* height: 15rem; */
+    }
+    .resume-container ul .introduce  .head-pic  .basic-info div{
+        font-size:14px;
+        padding:7px;
+    }
+    .graduation ul li img{
+        width: 70px;
+    }
+    .graduation ul li div{
+        font-size: 14px;
+        margin-top:15px;
+    }
+    .skills>ul>li img{
+        width:70px;
+    }
+    .experience ul .project-title div{
+        width:50%;
+        float:left;
+        font-size: 14px;
+        margin:5px 0;
+        line-height: 20px;
+    }
+    .experience ul .project-title .time{
+        width:50%;
+    }
+    .experience ul .project-content div{
+        font-size: 14px;
+        margin:5px 0;
+        line-height: 26px;
+    }
+    .resume-container ul .introduce  .head-pic  .basic-info div{
+        width:100%;
+        line-height: 20px;
+
+    }
+    .graduation{
+        width:90%;
+        margin-left: 5%;
+    }
+    .skills>ul>li{
+        float:left;
+        width:33.3333%;
+        margin-bottom:3rem;
+    }
+    .skills>ul>li div{
+        font-size:2rem;
+    }
+    .experience p{
+        line-height: 30px;
+        text-indent: 28px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 379px) and (min-width:320px){
+    .resume-container ul .introduce{
+        padding: 3.5rem 1rem 3rem 1rem;
+    }
+    .resume-container ul  .title{
+        width:90%;
+        margin-left:5%;
+        font-size: 2rem;
+        margin-bottom:1.5rem;
+        line-height: 30px;
+    }
+    .resume-container ul .introduce  .head-pic{
+        width: 80%;
+        left: 10%;
+        margin-bottom: 20px;
+    }
+    .resume-container ul .introduce  .head-pic .img-box{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .resume-container ul .introduce  .head-pic .basic-info{
+        width: 100%;
+    }
+    .resume-container ul .introduce  .head-pic  .basic-info div{
+        font-size:14px;
+        padding:7px;
+    }
+    .graduation ul li img{
+        width: 50px;
+    }
+    .graduation ul li div{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .skills>ul>li img{
+        width:70px;
+    }
+    .experience ul .project-title div{
+        width:50%;
+        float:left;
+        font-size: 14px;
+        margin:5px 0;
+        line-height: 20px;
+    }
+    .experience ul .project-title .time{
+        width:50%;
+    }
+    .experience ul .project-content div{
+        font-size: 14px;
+        margin:5px 0;
+        line-height: 26px;
+    }
+    .resume-container ul .introduce  .head-pic  .basic-info div{
+        width:100%;
+    }
+    .graduation{
+        width:90%;
+        margin-left: 5%;
+    }
+    .skills>ul>li{
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+    .skills>ul>li div{
+        font-size: 1.5rem;
+    }
+    .experience p{
+        line-height: 30px;
+        text-indent: 28px;
+        font-size: 14px;
+    }
+}
