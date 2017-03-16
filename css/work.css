@@ -64,12 +64,12 @@ a{
     font-family: cursive;
 }
 .work-container .nav-box #leftNav{
-    left: 25%;
+    left: 20%;
 }
 .work-container .nav-box .word-nav{
-    width: 40%;
+    width: 50%;
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 0;
     border: 1px solid #DBE0E3;
     border-radius: 5px;
@@ -85,7 +85,7 @@ a{
     border-left:1px solid #DBE0E3;
 }
 .work-container .nav-box #rightNav{
-    right: 25%;
+    right: 20%;
 }
 .work-container .container{
     position: absolute;
