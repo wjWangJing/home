@@ -78,7 +78,7 @@ a{
     width:20%;
     float:left;
     text-align: center;
-    padding: 8px;
+    padding: 8px 2px;
     cursor: pointer;
 }
 .work-container .nav-box .word-nav div ~ div{
@@ -172,3 +172,92 @@ a{
 	=======
 */
 .active{background-color: #7C90DB;color:#fff;}
+
+
+/*  ========
+	响应式设计
+	=======
+*/
+@media screen and (max-width:1024px){
+    .work-container .nav-box .word-nav{
+        width: 60%;
+        left: 20%;
+    }
+    .work-container .nav-box .word-nav div{
+        width:20%;
+    }
+    .work-container .nav-box #leftNav{
+        left: 10%;
+    }
+    .work-container .nav-box #rightNav{
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .work-container .nav-box .word-nav{
+        width: 70%;
+        left: 15%;
+    }
+    .work-container .nav-box .word-nav div{
+        width:20%;
+    }
+    .work-container .nav-box #leftNav{
+        left: 5%;
+    }
+    .work-container .nav-box #rightNav{
+        right: 5%;
+    }
+}
+@media screen and (max-width:600px){
+    .work-container .work-catalog{
+        font-size: 30px;
+        top:50px;
+    }
+    .work-container .nav-box{
+        top:120px;
+    }
+    .work-container .nav-box .word-nav{
+        width: 94%;
+        left: 3%;
+    }
+    .work-container .nav-box .word-nav div{
+        width:20%;
+        font-size:14px;
+    }
+    .work-container .nav-box #leftNav{
+        position: fixed;
+        left: 5%;
+        top: 63%;
+        z-index: 10;
+    }
+    .work-container .nav-box #rightNav{
+        position: fixed;
+        right: 5%;
+        top: 63%;
+        z-index: 10;
+    }
+    .work-container .container .work-content li>div{
+        width:50%;
+    }
+    .hide{
+        display: none;
+    }
+}
+@media screen and (max-width:321px){
+    .work-container .work-catalog{
+        top:30px;
+    }
+    .work-container .nav-box{
+        top:80px;
+    }
+    .work-container .nav-box .word-nav div{
+        font-size:12px;
+    }
+    .work-container .nav-box #leftNav{
+        top:61%;
+    }
+    .work-container .nav-box #rightNav{
+        top: 61%;
+    }
+}

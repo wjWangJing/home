@@ -24,26 +24,26 @@ html,body{
 }
 @media screen and (max-width: 1440px) and (min-width:960px){
     .error{
-        width: 50%;
+        width: 35%;
         height: 60%;
     }
 
 }
 @media screen and (max-width: 959px) and (min-width:769px){
     .error{
-        width: 60%;
+        width: 40%;
         height: 80%;
     }
 }
 @media screen and (max-width: 768px) and (min-width:480px){
     .error{
-        width: 80%;
+        width: 60%;
         height: 80%;
     }
 }
 @media screen and (max-width: 479px) and (min-width:350px){
     .error{
-        width: 80%;
+        width: 60%;
         height: 60%;
     }
 }
