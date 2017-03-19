@@ -1,8 +1,30 @@
 html,body{
-    width:100%;
-    height:100%;
-    overflow: hidden;
-    background-color: #EFF4F7;
+    background: url("../image/note-bg.jpg") no-repeat center 0 fixed;
+}
+/*  ========
+	清除浮动
+	=======
+*/
+.clearFix:before,
+.clearFix:after{
+    content:" ";
+    display: table;
+}
+
+.clearFix:after{
+    clear:both;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+a:hover,a:active{
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+.hide{
+    display: none;
 }
 .error{
     position: absolute;
@@ -16,6 +38,155 @@ html,body{
     width:100%;
 }
 
+.note-container{
+    width:100%;
+    height:100%;
+    border-top:1px solid rgba(0,0,0,0);
+}
+
+.note-container .note-top{
+    width:80%;
+    height:100px;
+    background: rgba(255,255,255,.3);
+    margin:10px auto 40px;
+}
+
+.note-container .note-bottom{
+    width:80%;
+    min-height:100px;
+    margin:10px auto;
+    position:relative;
+}
+
+.note-container .note-bottom .note-timeLine{
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    border-right: 2px solid rgba(255,255,255,.7);
+    padding: 10px 0;
+}
+.note-container .note-bottom .note-timeLine div{
+    padding: 10px;
+}
+.note-container .note-bottom .note-timeLine div a{
+    display: block;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+.note-container .note-bottom .note-timeLine .note-timeLine-year a{
+    color:cornflowerblue;
+}
+.note-container .note-bottom .note-content{
+    width:80%;
+    min-height:500px;
+    position:absolute;
+    top:0;
+    left:15%;
+    background:url("../image/spine.png") repeat-y left;
+    padding-left:40px;
+}
+.note-container .note-bottom .note-content .note-content-item{
+    width:40%;
+    background: #fff;
+    position:relative;
+    border-radius: 3px;
+    padding:15px;
+    margin-bottom: 30px;
+}
+.note-container .note-bottom .note-content .note-content-item-left{
+    float: left;
+}
+
+.note-container .note-bottom .note-content .note-content-item-right{
+    float: right;
+    top:30px;
+ }
+.note-container .note-bottom .note-content .note-content-item .note-content-triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+    border-bottom: 10px solid transparent;
+    left:-10px;
+    top:10px;
+}
+.note-container .note-bottom .note-content .note-content-item .note-content-point{
+    position: absolute;
+    width:15px;
+    height:15px;
+    background: #fff;
+    left:-46px;
+    top:12px;
+    border-radius: 50%;
+}
+.note-container .note-bottom .note-content .note-content-item .note-content-point-left{
+    left:-143%;
+}
+
+.note-container .note-bottom .note-content .note-content-item .note-content-title{
+    font-size: 30px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.note-container .note-bottom .note-content .note-content-item .note-content-time{
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.note-container .note-bottom .note-content .note-content-item .note-content-summary{
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-indent: 32px;
+}
+.note-container .note-bottom .note-content .note-content-item .note-content-original{
+    text-align: right;
+}
+
+#noteContent>div{
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*响应式设计*/
 @media screen and (min-width:1441px){
     .error{
         width:35%;
