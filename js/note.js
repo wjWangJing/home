@@ -7,7 +7,8 @@
             $noteTimeLine : document.getElementById("noteTimeLine"),
             $timeLineTpl  : document.getElementById("timeLineTpl"),
             $noteContent  : document.getElementById("noteContent"),
-            $contentTpl   : document.getElementById("contentTpl")
+            $contentTpl   : document.getElementById("contentTpl"),
+            $noteTop      : document.getElementById("noteTop")
         };
         updateTimeLine(domElement);
         updateContent(domElement);
@@ -78,7 +79,8 @@
     var fixTimeLine = function(domElement){
         window.onscroll = function () {
             var scrollTop = document.body.scrollTop;
-            if(scrollTop >= 140){
+            var height = domElement.$noteTop.offsetHeight + 40;
+            if(scrollTop >= height){
                 domElement.$noteTimeLine.style.position = "fixed";
                 domElement.$noteTimeLine.style.top = "10px";
                 domElement.$noteTimeLine.style.left = "8%";

@@ -1,5 +1,6 @@
 html,body{
-    background: url("../image/note-bg.jpg") no-repeat center 0 fixed;
+    background: url("../image/note-bgr.jpg") no-repeat center 0 fixed;
+    background-size: cover;
 }
 /*  ========
 	清除浮动
@@ -20,8 +21,11 @@ a{
     text-decoration: none;
 }
 a:hover,a:active{
-    color:cornflowerblue;
+    color:#fff;
     text-decoration: underline;
+}
+.note-content-original a:hover{
+    color:#9593D9;
 }
 .hide{
     display: none;
@@ -45,14 +49,24 @@ a:hover,a:active{
 }
 
 .note-container .note-top{
-    width:80%;
-    height:100px;
-    background: rgba(255,255,255,.3);
+    width:1102px;
+    background: rgba(255,255,255,.6);
     margin:10px auto 40px;
+    padding:30px;
+    display: table;
+}
+.note-container .note-top div{
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.note-container .note-top div a{
+    color:#9593D9;
 }
 
 .note-container .note-bottom{
-    width:80%;
+    width:1152px;
     min-height:100px;
     margin:10px auto;
     position:relative;
@@ -64,7 +78,7 @@ a:hover,a:active{
     top: 0;
     left: 0;
     text-align: right;
-    border-right: 2px solid rgba(255,255,255,.7);
+    border-right: 2px solid rgba(255,255,255,.9);
     padding: 10px 0;
 }
 .note-container .note-bottom .note-timeLine div{
@@ -77,7 +91,7 @@ a:hover,a:active{
     cursor: pointer;
 }
 .note-container .note-bottom .note-timeLine .note-timeLine-year a{
-    color:cornflowerblue;
+    color:#fff;
 }
 .note-container .note-bottom .note-content{
     width:80%;
@@ -85,7 +99,7 @@ a:hover,a:active{
     position:absolute;
     top:0;
     left:15%;
-    background:url("../image/spine.png") repeat-y left;
+    background:url("../image/line.png") repeat-y left;
     padding-left:40px;
 }
 .note-container .note-bottom .note-content .note-content-item{
@@ -124,12 +138,12 @@ a:hover,a:active{
     border-radius: 50%;
 }
 .note-container .note-bottom .note-content .note-content-item .note-content-point-left{
-    left:-143%;
+    left:-569px;
 }
 
 .note-container .note-bottom .note-content .note-content-item .note-content-title{
     font-size: 30px;
-    color: #aaa;
+    color: #333;
     margin-bottom: 10px;
 }
 .note-container .note-bottom .note-content .note-content-item .note-content-time{
