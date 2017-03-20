@@ -55,7 +55,7 @@ function sortPhoto(n){
         _photo[i].className+=" photo_front";
         _photo[i].style.left = "";
         _photo[i].style.top = "";
-        _photo[i].style["-webkit-transform"] = "rotate(360deg) scale(1.3)";
+        _photo[i].style["-webkit-transform"] = "rotate(360deg) scale(1.1)";
         photos.push(_photo[i]);
     }
     var photo_center = document.getElementById("photo_"+n);
@@ -69,13 +69,13 @@ function sortPhoto(n){
         var photoL=photos_left[s];
         photoL.style.left =randomNum(ranges.left.x)+ "px";
         photoL.style.top = randomNum(ranges.left.y)+ "px";
-        photoL.style["-webkit-transform"] = "rotate("+randomNum([-180,180])+"deg) scale(1)";
+        photoL.style["-webkit-transform"] = "rotate("+randomNum([0,90])+"deg) scale(1)";
     }
     for(s in photos_right){
         var photo=photos_right[s];
         photo.style.left =randomNum(ranges.right.x)+ "px";
         photo.style.top = randomNum(ranges.right.y)+ "px";
-        photo.style["-webkit-transform"] = "rotate("+randomNum([-180,180])+"deg) scale(1)";
+        photo.style["-webkit-transform"] = "rotate("+randomNum([0,90])+"deg) scale(1)";
     }
     // 控制按钮处理
     var navs = g(".s");

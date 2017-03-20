@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eternal丶之生活</title>
     <link rel="shortcut icon" href="../favicon.ico">
@@ -11,28 +11,32 @@
     <link rel="stylesheet" href="../css/life.css">
 </head>
 <body>
-<div class="wrap" id="wrap">
-    <!--photo负责平移旋转-->
-    <div class="photo  photo_front" onclick="turn(this)" id="photo_{{index}}">
-        <!--photo-wrap负责翻转-->
-        <div class="photo-wrap">
-            <div class="side side-front">
-                <div class="image">
-                    <img src="../image/{{img}}" alt="">
+<div class="show">
+    为了获得更好的视觉体验，请在浏览器中查看
+</div>
+<div class="hide wrap-box">
+    <div class="wrap" id="wrap">
+        <!--photo负责平移旋转-->
+        <div class="photo  photo_front" onclick="turn(this)" id="photo_{{index}}">
+            <!--photo-wrap负责翻转-->
+            <div class="photo-wrap">
+                <div class="side side-front">
+                    <div class="image">
+                        <img src="../image/{{img}}" alt="">
+                    </div>
+                    <div class="caption">{{caption}}</div>
                 </div>
-                <div class="caption">{{caption}}</div>
-            </div>
-            <div class="side side-back">
-                <div class="photo-description">{{desc}}</div>
+                <div class="side side-back">
+                    <div class="photo-description">{{desc}}</div>
+                </div>
             </div>
         </div>
     </div>
+    <canvas id="sakura"><div>hfduehfuoewf</div></canvas>
 </div>
 
 
 
-
-<canvas id="sakura"><div>hfduehfuoewf</div></canvas>
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
