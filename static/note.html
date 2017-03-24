@@ -2,8 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eternal丶之笔记</title>
     <link rel="shortcut icon" href="../favicon.ico">
@@ -11,51 +10,60 @@
     <link rel="stylesheet" href="../css/note.css">
 </head>
 <body>
+<!--左侧时间轴月份模板-->
 <div id="timeLineTpl" class="hide">
-    <div>
-        <a href="#note_content_year_{{year}}_{{month}}"  id="note_timeLine_year_{{year}}_{{month}}">{{month}}月</a>
-    </div>
+    <div id="note_timeLine_year_{{year}}_{{month}}" class="month-list {{year}}_month">{{month}}月</div>
 </div>
-<div id="contentTpl" class="hide">
-    <div class="clearFix" id="note_content_year_{{year}}_{{month}}">
+
+<!--右侧内容模板-->
+<div id="contentMonthTpl" class="hide">
+    <div id="note_content_year_{{year}}_{{month}}" class="clearFix note-content-month">
         {{list}}
     </div>
 </div>
+<div id="contentYearTpl" class="hide">
+    <div id="note-content-year-{{year}}" class="note-content-year">{{year}}年</div>
+    {{yearList}}
+</div>
 
-<div class="note-container">
-    <!--头部介绍-->
-    <div class="note-top" id="noteTop">
-        <div>在这里分享了一些自己学习的内容，还有平时收集的资料和在线工具，有些内容纯属自己见解，可能会不完美，更多详情请访问<a href="http://www.jianshu.com/u/d8fa669f901c" target="_blank">简书个人主页</a></div>
-    </div>
-    <!--底部内容-->
-    <div class="note-bottom">
-        <!--左侧时间轴-->
-        <div class="note-timeLine" id="noteTimeLine">
-            <div class="note-timeLine-year">
-                <a href="javascript:void(0);" id="note_timeLine_year_{{year}}">{{year}}年</a>
-            </div>
-            {{monthList}}
+<div class="smallScreenHide">
+    <div class="note-container">
+        <!--头部介绍-->
+        <div class="note-top" id="noteTop">
+            <div>在这里分享了一些自己学习的内容，还有平时收集的资料和在线工具，有些内容纯属自己见解，可能会不完美，更多详情请访问：&nbsp;<a href="http://www.jianshu.com/u/d8fa669f901c" target="_blank">简书个人主页</a></div>
         </div>
-        <!--右侧内容-->
-        <div class="note-content" id="noteContent">
-            <div class="note-content-item {{className}} note_content_time_{{year}}_{{month}}">
-                <div class="note-content-triangle"></div>
-                <div class="note-content-point {{pointClassName}}"></div>
-                <div class="note-content-title">
-                    {{title}}
-                </div>
-                <div class="note-content-time">
-                    {{date}}
-                </div>
-                <div class="note-content-summary">
-                    {{summary}}
-                </div>
-                <div class="note-content-original">
-                    <a href={{href}} target="_blank">查看原文→</a>
+        <!--底部内容-->
+        <div class="note-bottom">
+            <!--左侧时间轴-->
+            <div class="note-timeLine" id="noteTimeLine">
+                <div class="note-timeLine-year">
+                    <div id="note_timeLine_year_{{year}}" class="year-list">{{year}}年</div>
+                    {{monthList}}
                 </div>
             </div>
+            <!--右侧内容-->
+            <div class="note-content" id="noteContent">
+                <div class="note-content-item {{className}}">
+                    <div class="note-content-triangle"></div>
+                    <div class="note-content-title">
+                        {{title}}
+                    </div>
+                    <div class="note-content-time">
+                        {{date}}
+                    </div>
+                    <div class="note-content-summary">
+                        {{summary}}
+                    </div>
+                    <div class="note-content-original">
+                        <a href={{href}} target="_blank">查看原文→</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<div class="smallScreenShow">
+    为了获得更好的视觉体验，请在浏览器中查看
 </div>
 
 <script type="text/javascript" src="../js/noteData.js"></script>

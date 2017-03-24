@@ -1,6 +1,10 @@
 html,body{
     background: url("../image/note-bgr.jpg") no-repeat center 0 fixed;
     background-size: cover;
+    background-color: #e9e9e9;
+}
+*{
+    box-sizing: border-box;
 }
 /*  ========
 	清除浮动
@@ -21,7 +25,7 @@ a{
     text-decoration: none;
 }
 a:hover,a:active{
-    color:#fff;
+    color:#9593D9;
     text-decoration: underline;
 }
 .note-content-original a:hover{
@@ -30,30 +34,20 @@ a:hover,a:active{
 .hide{
     display: none;
 }
-.error{
-    position: absolute;
-    margin:auto;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-}
-.error img{
-    width:100%;
-}
 
 .note-container{
     width:100%;
     height:100%;
-    border-top:1px solid rgba(0,0,0,0);
+    border-top:1px solid rgba(255,255,255,1);
 }
 
 .note-container .note-top{
-    width:1102px;
-    background: rgba(255,255,255,.6);
-    margin:10px auto 40px;
+    width:100%;
+    background: rgba(255,255,255,1);
+    margin:0 auto 40px;
     padding:30px;
     display: table;
+    text-align: center;
 }
 .note-container .note-top div{
     font-size: 20px;
@@ -66,7 +60,7 @@ a:hover,a:active{
 }
 
 .note-container .note-bottom{
-    width:1152px;
+    width:80%;
     min-height:100px;
     margin:10px auto;
     position:relative;
@@ -81,24 +75,27 @@ a:hover,a:active{
     border-right: 2px solid rgba(255,255,255,.9);
     padding: 10px 0;
 }
-.note-container .note-bottom .note-timeLine div{
-    padding: 10px;
+.note-container .note-bottom .note-timeLine>div{
+    padding: 0 10px 10px;
 }
-.note-container .note-bottom .note-timeLine div a{
+.note-container .note-bottom .note-timeLine .note-timeLine-year>div{
+    padding: 10px 0;
+}
+.note-container .note-bottom .note-timeLine div{
     display: block;
     width:100%;
     height:100%;
     cursor: pointer;
 }
-.note-container .note-bottom .note-timeLine .note-timeLine-year a{
-    color:#fff;
+.current{
+    color:#9593D9
 }
 .note-container .note-bottom .note-content{
     width:80%;
     min-height:500px;
-    position:absolute;
+    position:relative;
     top:0;
-    left:15%;
+    left:20%;
     background:url("../image/line.png") repeat-y left;
     padding-left:40px;
 }
@@ -115,8 +112,9 @@ a:hover,a:active{
 }
 
 .note-container .note-bottom .note-content .note-content-item-right{
-    float: right;
-    top:30px;
+    float: left;
+    margin-top:30px;
+    margin-left:50px;
  }
 .note-container .note-bottom .note-content .note-content-item .note-content-triangle{
     position: absolute;
@@ -137,10 +135,6 @@ a:hover,a:active{
     top:12px;
     border-radius: 50%;
 }
-.note-container .note-bottom .note-content .note-content-item .note-content-point-left{
-    left:-569px;
-}
-
 .note-container .note-bottom .note-content .note-content-item .note-content-title{
     font-size: 30px;
     color: #333;
@@ -164,77 +158,59 @@ a:hover,a:active{
 
 #noteContent>div{
     margin-bottom:30px;
+    position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*响应式设计*/
-@media screen and (min-width:1441px){
-    .error{
-        width:35%;
-        height:70%;
+#noteContent>.note-content-year{
+    margin-bottom:20px;
+    position: absolute;
+    left:-53px;
+}
+.contentTpl_month{
+    position: absolute;
+    top: 10px;
+    left: -70px;
+    z-index: 10;
+}
+.note_content_year{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+.smallScreenShow{
+    display: none;
+}
+@media screen and (max-width:960px){
+    .note-container .note-bottom{
+        width:90%;
+    }
+    .note-container .note-bottom .note-timeLine{
+        width: 15%;
+    }
+    .note-container .note-bottom .note-content{
+        left:23%;
+        padding-left:30px;
     }
 }
-@media screen and (max-width: 1440px) and (min-width:960px){
-    .error{
-        width: 35%;
-        height: 60%;
+@media screen and (max-width:800px){
+    .note-container .note-bottom{
+        width:95%;
     }
-
-}
-@media screen and (max-width: 959px) and (min-width:769px){
-    .error{
-        width: 40%;
-        height: 80%;
+    .note-container .note-bottom .note-timeLine{
+        width: 15%;
     }
-}
-@media screen and (max-width: 768px) and (min-width:480px){
-    .error{
-        width: 60%;
-        height: 80%;
+    .note-container .note-bottom .note-content{
+        left:23%;
+        padding-left:30px;
     }
 }
-@media screen and (max-width: 479px) and (min-width:350px){
-    .error{
-        width: 60%;
-        height: 60%;
+@media screen and (max-width:700px){
+    .smallScreenShow{
+        display: block;
+        text-align: center;
+        padding: 50px;
+        line-height: 30px;
     }
-}
-@media screen and (max-width: 349px) and (min-width:320px){
-    .error{
-        width: 80%;
-        height: 70%;
+    .smallScreenHide{
+        display: none;
     }
 }
