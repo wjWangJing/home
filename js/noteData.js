@@ -19,22 +19,6 @@ var noteData = {
                 "summary" : "一些有趣又实用的在线工具",
                 "href" : "http://www.jianshu.com/p/9326614004b0"
             }
-        ],
-        2 : [
-            {
-                "date" : "2017.02.15",
-                "title" : "资源链接",
-                "summary" : "一些在线文档和手册，方便查询和参考",
-                "href" : "http://www.jianshu.com/p/4c0321f1b3ce"
-            }
-        ],
-        1 : [
-            {
-                "date" : "2017.01.15",
-                "title" : "资源链接",
-                "summary" : "一些在线文档和手册，方便查询和参考",
-                "href" : "http://www.jianshu.com/p/4c0321f1b3ce"
-            }
         ]
     },
     2016 : {
