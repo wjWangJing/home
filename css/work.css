@@ -115,63 +115,81 @@ a{
     height:50%;
     float:left;
     overflow:hidden;
+    background-size: cover;
 }
 .work-container .container .work-content li .project-status-js1{
-    background: url("../image/jquery-bg-3.jpg") no-repeat center center;
+    background: url("../image/js-bg-1.jpg") no-repeat center center;
     background-size: cover;
 }
 .work-container .container .work-content li .project-status-js2{
-    background: url("../image/jquery-bg-2.jpg") no-repeat center center;
+    background: url("../image/js-bg-2.jpg") no-repeat center center;
     background-size: cover;
 }
 .work-container .container .work-content li .project-status-js3{
-    background: url("../image/jquery-bg-1.jpg") no-repeat center center;
+    background: url("../image/js-bg-3.jpg") no-repeat center center;
     background-size: cover;
 }
-.work-container .container .work-content li .project-demo>a{
-    display: block;
+.work-container .container .work-content li .project-status-react1{
+    background: url("../image/react-bg-3.jpg") no-repeat center center;
+    background-size: cover;
+}
+.work-container .container .work-content li .project-status-react2{
+    background: url("../image/react-bg-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.work-container .container .work-content li .project-status-react3{
+    background: url("../image/react-bg-1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.work-container .container .work-content li .project-demo>div{
     width:100%;
     height:100%;
-    position:relative;
-
+    padding:15px;
+    position: relative;
 }
-.work-container .container .work-content li .project-demo>a:hover .img-box{
-    opacity: 1;
-}
-.work-container .container .work-content li .project-demo a>div{
-    width:50%;
-    height:100%;
-    position: absolute;
-    top:0;
-    padding:20px;
-    text-align: center;
-    font-size: 18px;
-    color:#f3f3f3;
-    background-color: rgba(0,0,0,0.5);
-}
-.work-container .container .work-content li .project-demo a>div+div{
-    left:50%;
+.work-container .container .work-content li .js1{
     background: url("../image/backgammonGame.jpg") no-repeat center center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
-.work-container .container .work-content li .project-demo a>div .img-box{
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;
-    top:0;
-    background-color: rgba(0,0,0,0.8);
-    opacity: 0;
+.work-container .container .work-content li .react1{
+    background: url("../image/todo.png") no-repeat center center;
+    background-size: cover;
 }
-.work-container .container .work-content li .project-demo a>div .img-box img{
-    width:80%;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    z-index: 1;
+.work-container .container .work-content li .react2{
+    background: url("../image/web.png") no-repeat center center;
+    background-size: cover;
+}
+.work-container .container .work-content li .project-demo .product-same{
+    background: rgba(0,0,0,0.5);
+}
+.work-container .container .work-content li .cons{
+    background: url("../image/cons.jpg") no-repeat center center;
+    background-size: cover;
+}
+.work-container .container .work-content li .project-demo .product-same>div{
+    position: absolute;
+    left:15px;
+    bottom:15px;
+    width: 100%;
+    text-align: center;
+}
+.work-container .container .work-content li .project-demo .product-same>div a{
+    display: block;
+    color: #fff;
+    line-height: 25px;
+}
+.work-container .container .work-content li .project-demo h3{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#fff;
+}
+.work-container .container .work-content li .project-demo p{
+    line-height: 25px;
+    text-indent: 32px;
+    color:#d4d4d4;
+    font-size: 14px;
 }
 
 .work-error{
