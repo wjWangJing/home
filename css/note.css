@@ -136,9 +136,10 @@ a:hover,a:active{
     border-radius: 50%;
 }
 .note-container .note-bottom .note-content .note-content-item .note-content-title{
-    font-size: 30px;
     color: #333;
     margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.5
 }
 .note-container .note-bottom .note-content .note-content-item .note-content-time{
     font-size: 16px;
