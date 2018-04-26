@@ -1,49 +1,49 @@
 var data = [{
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic1.jpg?Expires=1524711271&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=RA2wuJwR65oZZAPe3PNogQqjhW4%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic1.jpg",
 	"caption": "暮光里的剪影",
 	"desc": "上帝睁开了眼，我站在暮光里，不动，转头看看我来的时候在什么地方，想想经历过的事，想总结也想终结。我就回头看看，我想看看过去的自己，和路途经过的人。在干嘛。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic2.jpg?Expires=1524711338&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=%2BZ2%2FyJLudc1a8SVoGdx9JTr4R14%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic2.jpg",
 	"caption": "绽放的满天星",
 	"desc": "数百朵玲珑细致、洁白无瑕的小花，松松散散聚在一起，宛若无际夜空中的点点繁星，似雾般朦胧，极具婉约、雅素之美，又如爱人的呼吸般温柔动人。微风吹过，清香四逸，更显温馨。虽然生的如此美丽，但是有时候，却甘做配角"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic3.jpg?Expires=1524711349&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=%2F%2BlfTp503whJFTcLcjwO9EQLF20%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic3.jpg",
 	"caption": "夜幕降临",
 	"desc": "如果我们能够照顾现在，那么我们就是照顾了未来。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic4.jpg?Expires=1524711357&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=NFQGg5dHyqsLiMTlIH%2FCFejJpXY%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic4.jpg",
 	"caption": "流逝的时光",
 	"desc": "这是最好的时代，这是最坏的时代，这是智慧的时代，这是愚蠢的时代；这是信仰的时期，这是怀疑的时期；这是光明的季节，这是黑暗的季节；这是希望之春，这是失望之冬；人们面前有着各样事物，人们面前一无所有；人们正在直登天堂；人们正在直下地狱。 —《双城记》"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic5.jpg?Expires=1524711369&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=JI8wetvDAYkqCumrepFfxkruXTg%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic5.jpg",
 	"caption": "一个人的良辰美景",
 	"desc": "你是我猜不到的不知所措，我是你想不到的无关痛痒。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic6.jpg?Expires=1524711378&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=GmVpZH0OLLNrysLs8WJP6NNl4mA%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic6.jpg",
 	"caption": "我们不是天使",
 	"desc": "一个成熟的人往往发觉可以责怪的人越来越少，人人都有他的难处。——《我们不是天使》"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic7.jpg?Expires=1524711387&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=Cg6ausbcISrLGLt9tdBsGmgC67g%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic7.jpg",
 	"caption": "一个人的午后",
 	"desc": "某天，你无端想起一个人，她曾让你对明天有所期许，但是却完全没有出现在你的明天里。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic8.jpg?Expires=1524711398&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=NQGJGjBQJ1FZN1xq5kVYnbFiTWo%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic8.jpg",
 	"caption": "雨夜",
 	"desc": "梦回多年前的雨夜，天地空旷，仿佛只有你我和暖黄的灯光。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic9.jpg?Expires=1524711417&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=D3GPanrIEvz4Qqz6RCIiXTDejo0%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic9.jpg",
 	"caption": "缩影",
 	"desc": "一个人用来局限自己的范围愈狭小，他在一定意义上就愈接近于无限。正是这种表面上看来对世界上的一切都漠不关心的人，像白蚂蚁一样顽强地用他们特殊的材料建筑着自己稀奇古怪的，然而对他们来说却是独一无二的宇宙缩影似的小天地。—— 斯蒂芬·茨威格《象棋的故事》"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic10.jpg?Expires=1524711291&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=DbK2QHL0i5qnYgFPm%2FCS0EqVpds%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic10.jpg",
 	"caption": "就是这个调调",
 	"desc": "不要尝试去弄清每件事，因为有时候一些事情不是用来理解的，而是要懂得接受它们。"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic11.jpg?Expires=1524711309&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=tabNcVLxfT57msewu85ikPjEgOA%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic11.jpg",
 	"caption": "田野，你好！",
 	"desc": "世上最难的事就是求而不得。于是苦苦求，牵牵绊绊，坚守着自己对爱情的坚持。其实是坚守自己一个早就失去的阵地。坚守是一种高贵的品质。坚守还是：所有人全走了，全撤了，只有你在，哪怕光阴全走了，可是，你还在。坚守让一颗心没有崩溃，而是，活出温柔与安好"
 }, {
-	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic12.jpg?Expires=1524711330&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=mvcGycKDuVZJAAlfDgPPJs2Axqs%3D",
+	"img": "https://eternal-home.oss-cn-beijing.aliyuncs.com/pic12.jpg",
 	"caption": "目光中的远方",
 	"desc": "一直以为幸福在远方，在可以追逐的未来。后来才发现，那些拥抱过的人、握过的手、唱过的歌、流过的泪、爱过的人，就是幸福。"
 }];
