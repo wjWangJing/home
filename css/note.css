@@ -1,5 +1,5 @@
 html,body{
-    background: url("../image/note-bgr.jpg") no-repeat center 0 fixed;
+    background: url("https://eternal-home.oss-cn-beijing.aliyuncs.com/note-bgr.jpg?Expires=1524711210&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=jsdHQV%2Fm7EAiDt8cs%2F6UDPlXDM8%3D") no-repeat center 0 fixed;
     background-size: cover;
     background-color: #e9e9e9;
 }
@@ -96,7 +96,7 @@ a:hover,a:active{
     position:relative;
     top:0;
     left:20%;
-    background:url("../image/line.png") repeat-y left;
+    background:url("https://eternal-home.oss-cn-beijing.aliyuncs.com/line.png?Expires=1524711125&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=SG05up26Wmkdw9ys2L1HV3gd5J0%3D") repeat-y left;
     padding-left:40px;
 }
 .note-container .note-bottom .note-content .note-content-item{

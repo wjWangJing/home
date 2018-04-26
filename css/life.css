@@ -132,7 +132,7 @@ html,body{width:100%;height:100%;overflow: hidden;}
 .nav .s_current{
     width:30px;height:30px;display: inline-block;
     cursor: pointer;
-    background:url("../image/arrow.png") no-repeat center center;
+    background:url("https://eternal-home.oss-cn-beijing.aliyuncs.com/arrow.png?Expires=1524710627&OSSAccessKeyId=TMP.AQFo4oSqQQgF6b5obIX9Mp28KCHROScVh2eLl939_UTESqNXu2JAMCLnOrqAAAAwLAIUQAWbeppiDPNa0mkMnSmtfbD-GcICFBoIsQSSfqmss0llFslfQRh4t9t9&Signature=vbFZUYav2g6cHIOcpd3mdxfxnxA%3D") no-repeat center center;
     background-color: #888;
     background-size: 60%;
     text-align: center;
