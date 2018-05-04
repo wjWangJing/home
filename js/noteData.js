@@ -1,5 +1,11 @@
 var noteData = {
 	2018: {
+		5: [{
+			"date": "2018.05.04",
+			"title": "【原创】你见过这样的console么？",
+			"summary": "console是前端开发中常用的调试方法，但是你见过这种样式的console么？",
+			"href": "https://wjwangjing.github.io/blog/2018/05/04/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E4%BD%A0%E8%A7%81%E8%BF%87%E8%BF%99%E6%A0%B7%E7%9A%84console%E4%B9%88%EF%BC%9F/"
+		}],
 		4: [{
 				"date": "2018.04.25",
 				"title": "【原创】hexo系列问题",
