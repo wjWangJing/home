@@ -1,6 +1,11 @@
 var noteData = {
 	2018: {
 		5: [{
+			"date": "2018.05.07",
+			"title": "【转载】前端常见正则表达式",
+			"summary": "记录一下前端常用正则表达式，实际工作中要根据自己的项目提取合适的去使用",
+			"href": "https://wjwangjing.github.io/blog/2018/05/07/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
+		}, {
 			"date": "2018.05.04",
 			"title": "【原创】你见过这样的console么？",
 			"summary": "console是前端开发中常用的调试方法，但是你见过这种样式的console么？",
